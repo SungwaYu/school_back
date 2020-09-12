@@ -44,10 +44,10 @@ public class CodeGenerator {
 
         // 3、数据源配置
         DataSourceConfig dsc = new DataSourceConfig();
-        dsc.setUrl("jdbc:mysql://localhost:3306/" + prefix + "school_" + moduleName + "?serverTimezone=GMT%2D7");
+        dsc.setUrl("jdbc:mysql://34.94.145.106:3306/" + prefix + "school_" + moduleName + "?serverTimezone=GMT%2D7");
         dsc.setDriverName("com.mysql.cj.jdbc.Driver");
         dsc.setUsername("root");
-        dsc.setPassword("Sunwai991250");
+        dsc.setPassword("123456");
         dsc.setDbType(DbType.MYSQL);
         mpg.setDataSource(dsc);
 
