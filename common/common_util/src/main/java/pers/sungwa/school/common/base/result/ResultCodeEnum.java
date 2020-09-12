@@ -5,7 +5,7 @@ import lombok.ToString;
 
 /**
  * @author sungwa
- * @date 9/11/20 9:17 PM
+ * @date 9/11/20
  */
 @Getter
 @ToString
@@ -23,39 +23,39 @@ public enum ResultCodeEnum {
     EXCEL_DATA_IMPORT_ERROR(false, 21006, "Excel数据导入错误"),
 
     VIDEO_UPLOAD_ALIYUN_ERROR(false, 22001, "Ailiyun Video Upload Error"),
-    VIDEO_UPLOAD_TOMCAT_ERROR(false, 22002, "视频上传至业务服务器失败"),
-    VIDEO_DELETE_ALIYUN_ERROR(false, 22003, "阿里云视频文件删除失败"),
-    FETCH_VIDEO_UPLOADAUTH_ERROR(false, 22004, "获取上传地址和凭证失败"),
-    REFRESH_VIDEO_UPLOADAUTH_ERROR(false, 22005, "刷新上传地址和凭证失败"),
-    FETCH_PLAYAUTH_ERROR(false, 22006, "获取播放凭证失败"),
+    VIDEO_UPLOAD_TOMCAT_ERROR(false, 22002, "Video Upload Server Error"),
+    VIDEO_DELETE_ALIYUN_ERROR(false, 22003, "Fetch Video Aliyun Error"),
+    FETCH_VIDEO_UPLOADAUTH_ERROR(false, 22004, "Fetch Video Upload Authority Error"),
+    REFRESH_VIDEO_UPLOADAUTH_ERROR(false, 22005, "Refresh Video Upload Authority Error"),
+    FETCH_PLAYAUTH_ERROR(false, 22006, "Fetch Play Authority Error"),
 
-    URL_ENCODE_ERROR(false, 23001, "URL编码失败"),
-    ILLEGAL_CALLBACK_REQUEST_ERROR(false, 23002, "非法回调请求"),
-    FETCH_ACCESSTOKEN_FAILD(false, 23003, "获取accessToken失败"),
-    FETCH_USERINFO_ERROR(false, 23004, "获取用户信息失败"),
-    LOGIN_ERROR(false, 23005, "登录失败"),
+    URL_ENCODE_ERROR(false, 23001, "URL Encode Error"),
+    ILLEGAL_CALLBACK_REQUEST_ERROR(false, 23002, "Illegal Callback Request Error"),
+    FETCH_ACCESSTOKEN_FAILD(false, 23003, "Fetch AccessToken Failed"),
+    FETCH_USERINFO_ERROR(false, 23004, "Fetch User Info Error"),
+    LOGIN_ERROR(false, 23005, "Login Error"),
 
-    COMMENT_EMPTY(false, 24006, "评论内容必须填写"),
+    COMMENT_EMPTY(false, 24006, "Comment Empty"),
 
-    PAY_RUN(false, 25000, "支付中"),
-    PAY_UNIFIEDORDER_ERROR(false, 25001, "统一下单错误"),
-    PAY_ORDERQUERY_ERROR(false, 25002, "查询支付结果错误"),
+    PAY_RUN(false, 25000, "Pay Runtime Error"),
+    PAY_UNIFIEDORDER_ERROR(false, 25001, "Pay Unified Order Error"),
+    PAY_ORDERQUERY_ERROR(false, 25002, "Order Query Error"),
 
-    ORDER_EXIST_ERROR(false, 25003, "课程已购买"),
+    ORDER_EXIST_ERROR(false, 25003, "Order Exists"),
 
-    GATEWAY_ERROR(false, 26000, "服务不能访问"),
+    GATEWAY_ERROR(false, 26000, "Gateway Error"),
 
-    CODE_ERROR(false, 28000, "验证码错误"),
+    CODE_ERROR(false, 28000, "Code Error"),
 
-    LOGIN_PHONE_ERROR(false, 28009, "手机号码不正确"),
-    LOGIN_MOBILE_ERROR(false, 28001, "账号不正确"),
-    LOGIN_PASSWORD_ERROR(false, 28008, "密码不正确"),
-    LOGIN_DISABLED_ERROR(false, 28002, "该用户已被禁用"),
-    REGISTER_MOBLE_ERROR(false, 28003, "手机号已被注册"),
-    LOGIN_AUTH(false, 28004, "需要登录"),
-    LOGIN_ACL(false, 28005, "没有权限"),
-    SMS_SEND_ERROR(false, 28006, "短信发送失败"),
-    SMS_SEND_ERROR_BUSINESS_LIMIT_CONTROL(false, 28007, "短信发送过于频繁");
+    LOGIN_PHONE_ERROR(false, 28009, "Login Phone Error"),
+    LOGIN_MOBILE_ERROR(false, 28001, "Login Username Error"),
+    LOGIN_PASSWORD_ERROR(false, 28008, "Login Password Error"),
+    LOGIN_DISABLED_ERROR(false, 28002, "Login User Disabled"),
+    REGISTER_MOBLE_ERROR(false, 28003, "Register Phone Exists"),
+    LOGIN_AUTH(false, 28004, "Needed to Login"),
+    LOGIN_ACL(false, 28005, "Permission Denied"),
+    SMS_SEND_ERROR(false, 28006, "SMS Send Error"),
+    SMS_SEND_ERROR_BUSINESS_LIMIT_CONTROL(false, 28007, "SMS Busy Error");
 
 
     private Boolean success;

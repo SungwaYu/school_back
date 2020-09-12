@@ -9,22 +9,22 @@ import java.util.Map;
 
 /**
  * @author sungwa
- * @date 9/11/20 9:08 PM
+ * @date 9/11/20
  */
 @Data
-@ApiModel(value = "全局统一返回结果")
+@ApiModel(value = "Global Return Result")
 public class R {
 
-    @ApiModelProperty(value = "是否成功")
+    @ApiModelProperty(value = "If Success")
     private Boolean success;
 
-    @ApiModelProperty(value = "返回码")
+    @ApiModelProperty(value = "Return Code")
     private Integer code;
 
-    @ApiModelProperty(value = "返回消息")
+    @ApiModelProperty(value = "Return Message")
     private String message;
 
-    @ApiModelProperty(value = "返回数据")
+    @ApiModelProperty(value = "Return Data")
     private Map<String, Object> data = new HashMap<String, Object>();
 
     public R() {
