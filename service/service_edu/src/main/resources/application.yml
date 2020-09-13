@@ -4,10 +4,10 @@ server:
     max-threads: 10 #tomcat的最大并发值修改为10,默认是200
 
 spring:
-  profiles:
-    active: dev # 环境设置
-  application:
-    name: service-edu # 服务名
+#  profiles:
+#    active: dev # 环境设置
+#  application:
+#    name: service-edu # 服务名
   datasource: # mysql数据库连接
     driver-class-name: com.mysql.cj.jdbc.Driver
     url: jdbc:mysql://34.94.145.106:3306/db_school_edu?serverTimezone=GMT%2D7
