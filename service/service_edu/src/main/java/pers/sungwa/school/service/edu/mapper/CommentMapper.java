@@ -1,7 +1,8 @@
 package pers.sungwa.school.service.edu.mapper;
 
-import pers.sungwa.school.service.edu.entity.Comment;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
+import org.springframework.stereotype.Repository;
+import pers.sungwa.school.service.edu.entity.Comment;
 
 /**
  * <p>
@@ -9,8 +10,9 @@ import com.baomidou.mybatisplus.core.mapper.BaseMapper;
  * </p>
  *
  * @author Sungwa
- * @since 2020-09-12
+ * @since 2020-09-13
  */
+@Repository
 public interface CommentMapper extends BaseMapper<Comment> {
 
 }
