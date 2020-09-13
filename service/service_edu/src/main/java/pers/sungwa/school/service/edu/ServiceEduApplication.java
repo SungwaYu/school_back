@@ -8,7 +8,7 @@ import org.springframework.context.annotation.ComponentScan;
 
 /**
  * @author sungwa
- * @date 9/12/2020
+ * @date 9/13/20 1:27 AM
  */
 @SpringBootApplication
 @ComponentScan({"pers.sungwa.school"})

@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.RestController;
  * </p>
  *
  * @author Sungwa
- * @since 2020-09-12
+ * @since 2020-09-13
  */
 @RestController
 @RequestMapping("/edu/video")
