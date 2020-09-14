@@ -1,4 +1,4 @@
-package pers.sungwa.school.service.edu.controller;
+package pers.sungwa.school.service.cms.controller;
 
 
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -7,15 +7,15 @@ import org.springframework.web.bind.annotation.RestController;
 
 /**
  * <p>
- * 讲师 前端控制器
+ * 广告推荐 前端控制器
  * </p>
  *
  * @author Sungwa
  * @since 2020-09-13
  */
 @RestController
-@RequestMapping("/edu/teacher")
-public class TeacherController {
+@RequestMapping("/cms/ad")
+public class AdController {
 
 }
 
