@@ -26,41 +26,41 @@ public class Video extends BaseEntity {
 
     private static final long serialVersionUID=1L;
 
-    @ApiModelProperty(value = "course id")
+    @ApiModelProperty(value = "课程ID")
     private String courseId;
 
-    @ApiModelProperty(value = "chapter id")
+    @ApiModelProperty(value = "章节ID")
     private String chapterId;
 
-    @ApiModelProperty(value = "chapter name")
+    @ApiModelProperty(value = "节点名称")
     private String title;
 
-    @ApiModelProperty(value = "video sourse")
+    @ApiModelProperty(value = "云端视频资源")
     private String videoSourceId;
 
-    @ApiModelProperty(value = "origin file name")
+    @ApiModelProperty(value = "原始文件名称")
     private String videoOriginalName;
 
-    @ApiModelProperty(value = "sort")
+    @ApiModelProperty(value = "排序字段")
     private Integer sort;
 
-    @ApiModelProperty(value = "play times")
+    @ApiModelProperty(value = "播放次数")
     private Long playCount;
 
-    @ApiModelProperty(value = "free?：0 not free 1 free")
+    @ApiModelProperty(value = "是否可以试听：0收费 1免费")
     @TableField("is_free")
     private Boolean free;
 
-    @ApiModelProperty(value = "video time (second)")
+    @ApiModelProperty(value = "视频时长（秒）")
     private Float duration;
 
-    @ApiModelProperty(value = "status")
+    @ApiModelProperty(value = "状态")
     private String status;
 
-    @ApiModelProperty(value = "video space")
+    @ApiModelProperty(value = "视频源文件大小（字节）")
     private Long size;
 
-    @ApiModelProperty(value = "positive lock")
+    @ApiModelProperty(value = "乐观锁")
     private Long version;
 
 

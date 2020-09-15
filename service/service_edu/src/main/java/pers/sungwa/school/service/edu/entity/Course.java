@@ -1,15 +1,14 @@
 package pers.sungwa.school.service.edu.entity;
 
-import java.math.BigDecimal;
 import com.baomidou.mybatisplus.annotation.TableName;
-import com.baomidou.mybatisplus.annotation.IdType;
-import pers.sungwa.school.service.base.model.BaseEntity;
-import com.baomidou.mybatisplus.annotation.TableId;
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 import lombok.experimental.Accessors;
+import pers.sungwa.school.service.base.model.BaseEntity;
+
+import java.math.BigDecimal;
 
 /**
  * <p>
@@ -28,37 +27,40 @@ public class Course extends BaseEntity {
 
     private static final long serialVersionUID=1L;
 
-    @ApiModelProperty(value = "teacher id")
+    public static final String COURSE_DRAFT = "Draft";//未发布
+    public static final String COURSE_NORMAL = "Normal";//已发布
+
+    @ApiModelProperty(value = "课程讲师ID")
     private String teacherId;
 
-    @ApiModelProperty(value = "subject id")
+    @ApiModelProperty(value = "课程专业ID")
     private String subjectId;
 
-    @ApiModelProperty(value = "subject parent id")
+    @ApiModelProperty(value = "课程专业父级ID")
     private String subjectParentId;
 
-    @ApiModelProperty(value = "course title")
+    @ApiModelProperty(value = "课程标题")
     private String title;
 
-    @ApiModelProperty(value = "price. 0 means free")
+    @ApiModelProperty(value = "课程销售价格，设置为0则可免费观看")
     private BigDecimal price;
 
-    @ApiModelProperty(value = "total units")
+    @ApiModelProperty(value = "总课时")
     private Integer lessonNum;
 
-    @ApiModelProperty(value = "avatar path")
+    @ApiModelProperty(value = "课程封面图片路径")
     private String cover;
 
-    @ApiModelProperty(value = "sell count")
+    @ApiModelProperty(value = "销售数量")
     private Long buyCount;
 
-    @ApiModelProperty(value = "view count")
+    @ApiModelProperty(value = "浏览数量")
     private Long viewCount;
 
-    @ApiModelProperty(value = "positive lock")
+    @ApiModelProperty(value = "乐观锁")
     private Long version;
 
-    @ApiModelProperty(value = "course status. Draft: not published  Normal: published")
+    @ApiModelProperty(value = "课程状态 Draft未发布  Normal已发布")
     private String status;
 
 

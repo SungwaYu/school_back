@@ -15,10 +15,10 @@ import java.util.List;
 
 /**
  * @author sungwa
- * @date 9/13/20 5:16 PM
+ * @date 9/13/20
  */
 //@CrossOrigin //解决跨域问题
-@Api(description = "广告推荐")
+@Api("广告推荐")
 @RestController
 @RequestMapping("/api/cms/ad")
 @Slf4j

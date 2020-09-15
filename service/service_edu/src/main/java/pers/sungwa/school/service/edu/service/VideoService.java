@@ -1,7 +1,7 @@
 package pers.sungwa.school.service.edu.service;
 
-import pers.sungwa.school.service.edu.entity.Video;
 import com.baomidou.mybatisplus.extension.service.IService;
+import pers.sungwa.school.service.edu.entity.Video;
 
 /**
  * <p>
@@ -13,4 +13,10 @@ import com.baomidou.mybatisplus.extension.service.IService;
  */
 public interface VideoService extends IService<Video> {
 
+    void removeMediaVideoById(String id);
+
+    void removeMediaVideoByChapterId(String chapterId);
+
+    void removeMediaVideoByCourseId(String chapterId);
 }
+

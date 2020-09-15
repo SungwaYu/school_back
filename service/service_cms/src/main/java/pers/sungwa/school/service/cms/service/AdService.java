@@ -1,7 +1,9 @@
 package pers.sungwa.school.service.cms.service;
 
-import pers.sungwa.school.service.cms.entity.Ad;
+import com.baomidou.mybatisplus.core.metadata.IPage;
 import com.baomidou.mybatisplus.extension.service.IService;
+import pers.sungwa.school.service.cms.entity.Ad;
+import pers.sungwa.school.service.cms.entity.vo.AdVo;
 
 import java.util.List;
 
@@ -15,5 +17,11 @@ import java.util.List;
  */
 public interface AdService extends IService<Ad> {
 
+    IPage<AdVo> selectPage(Long page, Long limit);
+
+    boolean removeAdImageById(String id);
+
     List<Ad> selectByAdTypeId(String adTypeId);
+
 }
+

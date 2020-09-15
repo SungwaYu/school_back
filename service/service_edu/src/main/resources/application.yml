@@ -40,7 +40,7 @@ spring:
 mybatis-plus:
   configuration:
     log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
-  mapper-locations: classpath:com/atguigu/guli/service/edu/mapper/xml/*.xml
+  mapper-locations: classpath:pers/sungwa/school/service/edu/mapper/xml/*.xml
 
 ## 设置日志级别
 #logging:
