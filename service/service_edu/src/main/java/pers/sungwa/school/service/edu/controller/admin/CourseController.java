@@ -40,6 +40,7 @@ public class CourseController {
             @ApiParam(value = "课程基本信息", required = true)
             @RequestBody CourseInfoForm courseInfoForm
     ) {
+        log.info("saveCourseInfo");
         String courseId = courseService.saveCourseInfo(courseInfoForm);
         return R.ok().data("courseId", courseId).message("保存成功");
     }
@@ -50,6 +51,7 @@ public class CourseController {
             @ApiParam(value = "课程ID", required = true)
             @PathVariable String id) {
 
+        log.info("getById1");
         CourseInfoForm courseInfoForm = courseService.getCourseInfoById(id);
         if (courseInfoForm != null) {
             return R.ok().data("item", courseInfoForm);
@@ -64,6 +66,7 @@ public class CourseController {
             @ApiParam(value = "课程ID", required = true)
             @RequestBody CourseInfoForm courseInfoForm) {
 
+        log.info("getById2");
         courseService.updateCourseInfoByIf(courseInfoForm);
 
         return R.ok().message("修改成功");
@@ -75,6 +78,7 @@ public class CourseController {
                       @ApiParam(value = "每页记录数", required = true) @PathVariable Long limit,
                       @ApiParam("课程列表查询对象") CourseQueryVo courseQueryVo){
 
+        log.info("listPage");
         IPage<CourseVo> pageModel = courseService.selectPage(page, limit, courseQueryVo);
         List<CourseVo> records = pageModel.getRecords();
         long total = pageModel.getTotal();
@@ -91,6 +95,7 @@ public class CourseController {
         //删除课程封面
         courseService.removeCoverById(id);
 
+        log.info("removeById");
         //删除课程
         boolean result = courseService.removeCourseById(id);
         if(result){
@@ -106,6 +111,7 @@ public class CourseController {
             @ApiParam(value = "课程ID", required = true)
             @PathVariable String id){
 
+        log.info("getCoursePublishVoById");
         CoursePublishVo coursePublishVo = courseService.getCoursePublishVoById(id);
         if (coursePublishVo != null) {
             return R.ok().data("item", coursePublishVo);
@@ -120,6 +126,7 @@ public class CourseController {
             @ApiParam(value = "课程ID", required = true)
             @PathVariable String id){
 
+        log.info("publishCourseById");
         boolean result = courseService.publishCourseById(id);
         if (result) {
             return R.ok().message("发布成功");

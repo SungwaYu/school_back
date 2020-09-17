@@ -3,6 +3,9 @@ package pers.sungwa.school.service.edu.mapper;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 import org.springframework.stereotype.Repository;
 import pers.sungwa.school.service.edu.entity.CourseCollect;
+import pers.sungwa.school.service.edu.entity.vo.CourseCollectVo;
+
+import java.util.List;
 
 /**
  * <p>
@@ -15,4 +18,5 @@ import pers.sungwa.school.service.edu.entity.CourseCollect;
 @Repository
 public interface CourseCollectMapper extends BaseMapper<CourseCollect> {
 
+    List<CourseCollectVo> selectPageByMemberId(String memberId);
 }

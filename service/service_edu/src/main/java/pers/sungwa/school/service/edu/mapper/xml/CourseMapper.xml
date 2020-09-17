@@ -32,7 +32,7 @@
         ${ew.customSqlSegment}
     </select>
 
-    <select id="selectCoursePublishVoById" resultType="pers.sungwa.school.service.edu.entity.vo.CourseVo">
+    <select id="selectCoursePublishVoById" resultType="pers.sungwa.school.service.edu.entity.vo.CoursePublishVo">
         SELECT
         c.id,
         c.title,
@@ -46,7 +46,7 @@
         FROM <include refid="tables" />
         WHERE c.id = #{id}
     </select>
-    <select id="selectWebCourseVoById" resultType="pers.sungwa.school.service.edu.entity.vo.CourseVo">
+    <select id="selectWebCourseVoById" resultType="pers.sungwa.school.service.edu.entity.vo.WebCourseVo">
        SELECT
         c.id,
         c.title,
@@ -76,7 +76,7 @@
         WHERE
         c.id = #{id}
     </select>
-    <select id="selectCourseDtoById" resultType="pers.sungwa.school.service.edu.entity.vo.CourseVo">
+    <select id="selectCourseDtoById" resultType="pers.sungwa.school.service.base.dto.CourseDto">
       SELECT
       c.id,
       c.title,

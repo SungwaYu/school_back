@@ -24,7 +24,7 @@ import java.util.List;
  * @since 2020-09-13
  */
 //@CrossOrigin //解决跨域问题
-@Api(description = "广告推荐管理")
+@Api("广告推荐管理")
 @RestController
 @RequestMapping("/admin/cms/ad")
 @Slf4j

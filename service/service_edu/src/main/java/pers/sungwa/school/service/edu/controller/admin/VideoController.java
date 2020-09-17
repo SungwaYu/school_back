@@ -15,7 +15,7 @@ import pers.sungwa.school.service.edu.service.VideoService;
  * @date 9/14/20
  */
 //@CrossOrigin
-@Api(description = "课时管理")
+@Api("课时管理")
 @RestController
 @RequestMapping("/admin/edu/video")
 @Slf4j

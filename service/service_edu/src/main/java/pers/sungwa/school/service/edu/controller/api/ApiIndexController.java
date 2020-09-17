@@ -18,7 +18,7 @@ import java.util.List;
  * @author sungwa
  * @date 9/13/20 3:00 PM
  */
-@Api(description="首页")
+@Api("首页")
 @RestController
 @RequestMapping("/api/edu/index")
 public class ApiIndexController {
